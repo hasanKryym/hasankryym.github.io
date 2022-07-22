@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hasanKryym</title>
+    <script
+      src="https://kit.fontawesome.com/217c26f1f3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./img/programming icon.png"
+    />
+  </head>
+  <body>
+    <!-- intro -->
+
+    <header>
+      <div class="header-content">
+        <h2 class="header-title">Portfolio</h2>
+        <div class="list">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact-title">Contact Me</a></li>
+          </ul>
+        </div>
+        <button title="toggle navbar" class="navbar" id="toggle-navbar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="nav-list remove">
+        <ul>
+          <li><a class="nav-list-links" href="#home">Home</a></li>
+          <li><a class="nav-list-links" href="#about">About Me</a></li>
+          <li><a class="nav-list-links" href="#work">My Work</a></li>
+          <li>
+            <a class="nav-list-links" href="#contact-title">Contact Me</a>
+          </li>
+        </ul>
+        <div class="icons">
+          <div class="social-icons">
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://github.com/hasanKryym"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://www.linkedin.com/in/hasan-kryym"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://discord.io/Web-Codes"
+              ><i class="fa-brands fa-discord"></i>
+            </a>
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://www.instagram.com/hasan_krym"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="home">
+      <div class="home-img">
+        <img src="./img/programming icon.png" alt="programming picture" />
+      </div>
+      <div class="home-text">
+        <h2>Hi, I am <strong>Hasan</strong></h2>
+        <p><strong>a Web dev</strong></p>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <div id="about" class="about-title">
+      <h2>About Me</h2>
+    </div>
+    <div class="line"></div>
+    <section class="about"></section>
+
+    <!-- My Work -->
+    <div id="work" class="work-title">
+      <h2>My Work</h2>
+    </div>
+    <div class="line"></div>
+    <section class="work"></section>
+
+    <!-- contact section -->
+    <h2 id="contact-title">Contact Me</h2>
+    <div class="line"></div>
+    <section class="contact">
+      <div class="contact-container">
+        <form
+          action="https://formspree.io/f/xayvrbdr"
+          method="POST"
+          id="my-form"
+        >
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input class="input" type="text" id="firstName" name="firstName" />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input class="input" type="text" id="lastName" name="lastName" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="status"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social">
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://github.com/hasanKryym"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/hasan-kryym"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://discord.io/Web-Codes"
+          ><i class="fa-brands fa-discord"></i>
+        </a>
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://www.instagram.com/hasan_krym"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./main.js"></script>
+  <script src="./projects.js"></script>
+  <script src="./about.js"></script>
+</html>
