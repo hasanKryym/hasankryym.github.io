@@ -6,6 +6,13 @@ navListLinks = document.querySelectorAll('.nav-list-links');
 headerTitle = document.querySelector('.header-title');
 inputValue = document.querySelectorAll('.input');
 
+// Sticky header
+
+window.addEventListener('scroll', () => {
+  var header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+
 // toggle navbar
 
 toggleNav.addEventListener('click', () => {

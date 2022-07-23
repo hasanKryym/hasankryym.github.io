@@ -48,8 +48,8 @@ Variables
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
   --max-width: 1170px;
   --fixed-width: 620px;
 }
@@ -175,7 +175,7 @@ header {
   width: 100vw;
   margin: auto;
   position: fixed;
-  box-shadow: var(--dark-shadow);
+  box-shadow: var(--light-shadow);
   transition: var(--transition);
   margin-bottom: 2rem;
   background: var(--clr-grey-10);
@@ -188,6 +188,9 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+}
+.sticky {
+  box-shadow: var(--dark-shadow);
 }
 
 .navbar {
