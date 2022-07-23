@@ -45,9 +45,16 @@ navListLinks.forEach((link) => {
 
 // contact me form
 var form = document.getElementById("my-form");
-      async function handleSubmit(event) {
+       function handleSubmit(event) {
         event.preventDefault();
-        if (!checkInput){
+        let flag =true;
+        for (let i=0; i<inputValue.length; i++){
+        if(inputValue[i].value == '') {
+          flag = false;
+        break;
+        }
+      }
+        if (flag){
       var status = document.getElementById("status");
       var data = new FormData(event.target);
       fetch(event.target.action, {
@@ -87,22 +94,10 @@ var form = document.getElementById("my-form");
     }
    }
     form.addEventListener("submit", handleSubmit)
-    
-    // check input 
-    function checkInput() {
-      let flag = true;
-      for (let i=0; i<inputValue.length; i++){
-        if(inputValue[i].value === '') {
-          flag = false;
-        break;
-        }
-      }
-      return flag;
-    
-  }
 
   function removeStatus() {
     let status = document.getElementById('status');
     status.innerHTML = '';
       status.classList.remove('status-anm');
   }
+  console.log(inputValue[0].value)
