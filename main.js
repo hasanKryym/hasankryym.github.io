@@ -1,28 +1,22 @@
 // select elements
 
-toggleNav = document.querySelector('#toggle-navbar');
-navList = document.querySelector('.nav-list');
-navListLinks = document.querySelectorAll('.nav-list-links');
-headerTitle = document.querySelector('.header-title');
-inputValue = document.querySelectorAll('.input');
+const toggleNav = document.querySelector('#toggle-navbar');
+const inputValue = document.querySelectorAll('.input');
+const mobileList = document.querySelector('.list-mobile');
 
 // Sticky header
 
-window.addEventListener('scroll', () => {
-  var header = document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 0);
-});
+// window.addEventListener('scroll', () => {
+//   var header = document.querySelector('header');
+//   header.classList.toggle('sticky', window.scrollY > 0);
+// });
 
-// toggle navbar
 
+// toggle navBar
 toggleNav.addEventListener('click', () => {
-    if (navList.classList.contains('remove')){
-      showNav();
-    }
-    else {
-      hideNav();
-    }
+      mobileList.classList.toggle("show-mobile-list");
 })
+
 
 function hideNav() {
     navList.classList.add('remove');
@@ -35,13 +29,7 @@ function showNav() {
     toggleNav.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     headerTitle.innerHTML = '';
 }
-// Remove navList when a link is clicked
 
-navListLinks.forEach((link) => {
-   link.addEventListener('click', () => {
-    hideNav();
-})
-})
 
 // contact me form
 var form = document.getElementById("my-form");

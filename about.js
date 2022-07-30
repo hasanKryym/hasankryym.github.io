@@ -1,12 +1,12 @@
 const aboutMe = [
     {
         title: 'Front-end dev',
-        desc: "I have experience with HTML, CSS, and JS. In addition, I am currently working on new projects. I'm learning VueJS.",
+        desc: "I have experience with HTML, CSS, and JS. I am currently working on new projects. I'm learning VueJS.",
     },
 
     {
         title: 'Junior Web Developer at XpertBot',
-        desc: "I joined XpertBot in April 2022. I'm currently working on a gaming website for the gaming community.",
+        desc: "I joined XpertBot in April 2022. I'm currently working on a gaming website",
     }
 ]
 
