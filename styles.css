@@ -74,6 +74,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  overflow-x: hidden;
 }
 
 ul {
@@ -297,7 +298,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 90vw;
-  margin: 4rem auto 0 auto;
+  margin: 4rem auto 4rem auto;
 }
 .home-img {
   width: 20vw;
@@ -567,7 +568,7 @@ footer {
   }
 
   .about article {
-    width: 18rem;
+    width: 20rem;
   }
 
   .work .text {
