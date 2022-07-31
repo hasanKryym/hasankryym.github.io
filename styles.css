@@ -242,7 +242,7 @@ header {
   transition: var(--transition);
 }
 .show-mobile-list {
-  height: 10rem;
+  height: 12.7rem;
 }
 .list-mobile li {
   list-style-type: none;
@@ -257,15 +257,15 @@ header {
   color: var(--clr-grey-3);
   transition: var(--transition);
   letter-spacing: var(--spacing);
-  line-height: 40px;
+  line-height: 50px;
 }
 .list-mobile li:hover {
   cursor: pointer;
-  background: var(--clr-primary-7);
+  background: var(--clr-primary-1);
   padding-left: 25px;
 }
 .list-mobile li a:hover {
-  color: var(--clr-primary-4);
+  color: var(--clr-primary-9);
 }
 
 /* social links */
