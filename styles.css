@@ -136,6 +136,7 @@ p {
 
   body {
     font-size: 1rem;
+    width: 100vw;
     overflow-x: hidden;
   }
 
