@@ -1,7 +1,7 @@
 const aboutMe = [
     {
         title: 'Front-end dev',
-        desc: "I have experience with HTML, CSS, and JS. I am currently working on new projects. I'm learning VueJS.",
+        desc: "I have experience with HTML, CSS, and JS. I am currently learning React.",
     },
 
     {

@@ -291,6 +291,20 @@ header {
   color: var(--clr-primary-2);
 }
 
+/* scroll animation */
+
+.animeX {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.animeX.active {
+  transform: translate(0);
+  opacity: 1;
+}
+
 /* home section */
 
 .home {
@@ -351,13 +365,16 @@ header {
   text-align: center;
   min-height: fit-content;
   margin-bottom: 1rem;
+  height: 40%;
 }
 .about p {
   padding-top: 1rem;
   text-align: justify;
   min-height: fit-content;
+  height: 40%;
 }
 .about .link {
+  height: 20%;
   margin-top: 2rem;
   text-align: center;
   margin-bottom: 1rem;

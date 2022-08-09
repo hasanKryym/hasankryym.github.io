@@ -12,6 +12,31 @@ const mobileList = document.querySelector('.list-mobile');
 // });
 
 
+// scrolling animation
+window.addEventListener('DOMContentLoaded', () => {
+  const homeSection = document.querySelector('#home');
+  const aboutSection = document.querySelector('.about');
+
+  homeSection.classList.add('active');
+  aboutSection.classList.add('active');
+})
+window.addEventListener('scroll', () => {
+  var anime = document.querySelectorAll('.animeX');
+
+  for(let i = 0; i < anime.length; i++) {
+    var windowHeight = window.innerHeight;
+    var animeTop = anime[i].getBoundingClientRect().top;
+    var animePoint = 150;
+
+    if (animeTop < windowHeight - animePoint) {
+      anime[i].classList.add('active');
+    }
+    else {
+      anime[i].classList.remove('active');
+    }
+  }
+})
+
 // toggle navBar
 toggleNav.addEventListener('click', () => {
       mobileList.classList.toggle("show-mobile-list");
