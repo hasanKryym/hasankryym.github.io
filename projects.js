@@ -1,5 +1,11 @@
 const projectsArray = [
     {
+        name: 'Gaming Addict',
+        source: 'https://github.com/hasanKryym/Gaming-Addict',
+        img: './img/gamingWebsite.png',
+    },
+
+    {
         name: 'Restaurants menu',
         source: 'https://github.com/hasanKryym/Menu',
         img: './img/menu.png',

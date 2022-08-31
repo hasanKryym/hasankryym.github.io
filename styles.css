@@ -134,12 +134,6 @@ p {
     font-size: 1rem;
   }
 
-  body {
-    font-size: 1rem;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-
   h1,
   h2,
   h3,
@@ -217,10 +211,6 @@ header {
   border: none;
   transition: var(--transition);
   background: transparent;
-}
-
-.navbar:hover {
-  transform: rotate(90deg);
 }
 
 .remove {
@@ -417,13 +407,15 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 1rem 0.5rem;
   border-radius: 5px;
+  height: 400px;
 }
 
 .image {
+  object-fit: cover;
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
@@ -562,6 +554,9 @@ footer {
   .home-img {
     width: 100%;
   }
+  .container {
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 670px) {
@@ -597,5 +592,13 @@ footer {
 @media screen and (max-width: 992px) {
   .list {
     display: none;
+  }
+  .container {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    height: 125px;
   }
 }

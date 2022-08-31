@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
       anime[i].classList.remove('active');
     }
   }
-})
+});
 
 // toggle navBar
 toggleNav.addEventListener('click', () => {
