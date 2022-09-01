@@ -1,7 +1,7 @@
 const projectsArray = [
     {
         name: 'Gaming Addict',
-        source: 'https://github.com/hasanKryym/Gaming-Addict',
+        source: 'https://gaming-addict.000webhostapp.com/',
         img: './img/gamingWebsite.png',
     },
 
@@ -37,7 +37,7 @@ function createProject() {
     for (let i =0; i < projectsArray.length; i++) {
         projects = `
         <div class="project">
-            <a href="${projectsArray[i].source}"> 
+            <a target="__blank" href="${projectsArray[i].source}"> 
                 <div class="container">
                  <img src="${projectsArray[i].img}" alt="Avatar" class="image" style="width:100%">
                     <div class="middle">
