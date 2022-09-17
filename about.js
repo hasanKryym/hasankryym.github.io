@@ -12,17 +12,14 @@ const aboutMe = [
 
 const aboutSection = document.querySelector('.about');
  for (let i =0; i < aboutMe.length; i++) {
-    about = `
-        <article>
-        <h2>${aboutMe[i].title}</h2>
-        <hr />
-        <p class="about-par">
-          ${aboutMe[i].desc}
-        </p>
-        <div class="link">
-          <a href="#contact-title">Let's talk</a>
-        </div>
-      </article>
+   let about = `
+        <article class="about-article">
+          <h3>${aboutMe[i].title}</h3>
+          <hr />
+          <div class="about-info">
+            <p>${aboutMe[i].desc}</p>
+          </div>
+        </article>
     `;
     aboutSection.innerHTML += about;
  }

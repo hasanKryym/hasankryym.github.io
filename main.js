@@ -11,31 +11,30 @@ const mobileList = document.querySelector('.list-mobile');
 //   header.classList.toggle('sticky', window.scrollY > 0);
 // });
 
-
+const homeSection = document.querySelector('#home');
 // scrolling animation
-window.addEventListener('DOMContentLoaded', () => {
-  const homeSection = document.querySelector('#home');
-  const aboutSection = document.querySelector('.about');
+// window.addEventListener('DOMContentLoaded', () => {
+  
 
-  homeSection.classList.add('active');
-  aboutSection.classList.add('active');
-})
-window.addEventListener('scroll', () => {
-  var anime = document.querySelectorAll('.animeX');
+//   homeSection.classList.add('active');
+//   aboutSection.classList.add('active');
+// })
+// window.addEventListener('scroll', () => {
+//   var anime = document.querySelectorAll('.animeX');
 
-  for(let i = 0; i < anime.length; i++) {
-    var windowHeight = window.innerHeight;
-    var animeTop = anime[i].getBoundingClientRect().top;
-    var animePoint = 150;
+//   for(let i = 0; i < anime.length; i++) {
+//     var windowHeight = window.innerHeight;
+//     var animeTop = anime[i].getBoundingClientRect().top;
+//     var animePoint = 150;
 
-    if (animeTop < windowHeight - animePoint) {
-      anime[i].classList.add('active');
-    }
-    else {
-      anime[i].classList.remove('active');
-    }
-  }
-});
+//     if (animeTop < windowHeight - animePoint) {
+//       anime[i].classList.add('active');
+//     }
+//     else {
+//       anime[i].classList.remove('active');
+//     }
+//   }
+// });
 
 // toggle navBar
 toggleNav.addEventListener('click', () => {
