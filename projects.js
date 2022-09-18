@@ -8,9 +8,16 @@ const projectsArray = [
 
     {
         name: 'To-do-list',
-        source: 'https://github.com/hasanKryym/To-do-list',
+        source: 'https://github.com/hasanKryym/to-do-list',
         img: './img/to-do-list.png',
         live:'https://to-do-list-reactt.netlify.app/'
+    },
+
+    {
+        name: 'color-generator',
+        source: 'https://github.com/hasanKryym/color-generator',
+        img: './img/color-generator.png',
+        live:'https://react-color-generator-appp.netlify.app/'
     },
 
     {

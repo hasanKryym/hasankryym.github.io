@@ -231,7 +231,7 @@ header {
   background: var(--clr-grey-10);
   height: 0;
   overflow: hidden;
-  transition: var(--transition);
+  transition: all 0.25s ease;
 }
 .show-mobile-list {
   height: 12.7rem;
@@ -404,10 +404,9 @@ header {
   border-radius: 6px;
   color: var(--clr-primary-9);
   font-size: 14px;
+  margin-right: 6px;
 }
-.project a {
-  background: red;
-}
+
 .project .live-btn {
   border: none;
   background: var(--clr-primary-4);
