@@ -1,7 +1,7 @@
 const projectsArray = [
     {
         name: 'Gaming Addict',
-        source: 'https://gaming-addict.000webhostapp.com/',
+        source: 'https://github.com/hasanKryym/gaming-Addict',
         img: './img/gamingWebsite.png',
         live:'https://gaming-addictt.netlify.app/'
     },
@@ -26,13 +26,6 @@ const projectsArray = [
         img: './img/menu.png',
         live:'https://menu-jscript.netlify.app/'
     },
-
-    {
-        name: 'Tabs',
-        source: 'https://github.com/hasanKryym/Tabs',
-        img: './img/tabs.png',
-        live:'https://tabs-jscript.netlify.app/'
-    }
     
 ];
 
